@@ -1,0 +1,192 @@
+.sedona-photos{
+    background-color: white;
+
+    padding-top: 40px;
+}
+.sedona-photos__header-title{
+    margin: 0;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+.sedona-photos__header-wrapper{
+    .mobile-centered;
+}
+.sedona-photos__header{
+    text-align: center;
+
+    padding-bottom: 45px;
+
+    border-bottom: 1px solid #E5E5E5 ;
+}
+.sedona-photos__header-text{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #424242;
+
+    line-height: 16px;
+    margin: 0;
+}
+.sedona-photos__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.photos-list__item{
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #E5E5E5 ;
+
+}
+
+.photos-figure{
+    margin: 0;
+    padding: 0;
+
+    .mobile-centered;
+}
+.photos-figure__description{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.photos-figure__photo-author{
+    font-size: 14px;
+    text-transform: none;
+    color: #424242
+}
+.photos-figure__likes-number{
+    display: block;
+    position: relative;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding-left: 40px;
+    &::before{
+        content: "";
+
+        display: block;
+        width: 23px;
+        height: 21px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background: url("../img/photo-video/like-icon.svg.svg") no-repeat;
+    }
+}
+
+@media(min-width: @tablet-width){
+
+    .sedona-photos__header{
+        border-bottom: none; 
+    }
+    .sedona-photos__header-wrapper{
+        .tablet-centered;
+    }
+
+    .sedona-photos__header-text{
+        width: 444px;
+        margin: 0 auto;
+    }
+    .sedona-photos__header-title{
+        font-size: 30px;
+    }
+
+    .photos-list__item{
+        border-bottom: none;
+    }
+
+    .photos-figure{
+        background-color: #F1F1F1;
+
+        width: 100%;
+    }
+
+    .photos-list{
+        .tablet-centered;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .photos-figure__description-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 5px;
+    }
+
+    .photos-figure__author-wrapper{
+        padding-left: 20px;
+    }
+
+    .photos-figure__likes-number{
+        padding-right: 20px;
+    }
+    .photos-figure{
+        padding-bottom: 15px;
+    }
+
+    .photos-list__item--wide{
+        width: 100%;
+    }
+
+    .photos-list__item{
+        padding: 0;
+    }
+
+    .photos-figure--dark{
+        background-color: #E9E9E9;
+    }
+}
+
+@media(min-width: @desktop-width){
+    .sedona-photos__list{
+        width: 100%;
+    }
+
+    .photos-figure{
+        position: relative;
+        padding: 0;
+    }
+
+    .photos-figure__description-wrapper{
+        position: absolute;
+        
+        bottom: 8px;
+
+        color: white;
+
+        background-color: rgba(0, 0, 0, 0.2);
+
+        width: 100%;
+    }
+
+    .photos-figure__photo-author{
+        color: white;
+    }
+
+    .photos-figure__likes-number::before{
+        background-image: url("../img/photo-video/like-icon-white.svg");
+    }
+
+    .photos-list__item--wide{
+        height: 400px;
+    }
+
+    .sedona-photos__header{
+        padding-bottom: 110px;
+        padding-top: 110px;
+    }
+
+
+}

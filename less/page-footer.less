@@ -1,0 +1,172 @@
+.page-footer{
+  background-color: white;
+
+  width: 320px;
+  min-height: 233px;
+
+  text-transform: uppercase;
+}
+
+.page-footer__wrapper{
+  width: 280px;
+  padding-top: 40px;
+
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.page-footer__hashtag{
+  font-size: 21px;
+}
+
+.social__list{
+  list-style: none;
+
+  display: flex;
+
+  margin: 0 auto;
+  padding: 0;
+  width: 151px;
+
+  justify-content: space-between;
+}
+
+.social__item{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0;
+
+  width: 46px;
+  height: 46px;
+
+  background-color: @sedona-blue;
+
+  &:hover{
+    background-color: #669DC0;
+  }
+
+  &:active{
+    background-color: #5495BD;
+  }
+
+}
+
+.social__link{
+
+  display: block;
+
+  z-index: 1;
+
+
+  background-repeat: no-repeat;
+
+  &--twitter{
+
+    width: 18px;
+    height: 14px;
+    background-image: url(../img/icon-twitter.svg);
+  }
+
+  &--facebook{
+
+    width: 9px;
+    height: 18px;
+    background-image: url(../img/icon-facebook.svg);
+  }
+
+  &--youtube{
+
+    width: 20px;
+    height: 14px;
+    background-image: url(../img/icon-youtube.svg);
+  }
+
+
+  &:active{
+    opacity: 0.5;
+  }
+
+}
+
+
+
+.page-footer__hashtag{
+  margin-bottom: 35px;
+}
+
+.page-footer__copyright{
+  margin-top: 35px;
+
+  display: flex;
+
+  justify-content: center;
+
+
+
+}
+
+.copyright__text{
+  font-weight: normal;
+
+  margin-right: 12px;
+}
+
+.copyright__link{
+  display: block;
+  font-size: 0;
+
+
+  width: 27px;
+  height: 34px;
+
+  background-image: url(../img/htmlacademy.svg);
+  background-repeat: no-repeat;
+
+  &:hover{
+    background-image: url(../img/copyright-blue.svg);
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer{
+    width: 768px;
+    min-height: 120px
+
+  }
+
+  .page-footer__wrapper{
+    width: 648px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__copyright{
+    margin-top: 0;
+
+  }
+
+  .page-footer__hashtag{
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer{
+    width: 1200px;
+  }
+
+  .page-footer__wrapper{
+    width: 967px;
+  }
+}

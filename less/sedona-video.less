@@ -1,0 +1,68 @@
+.sedona-video{
+    background-color: white;
+
+    padding-top: 35px;
+    padding-bottom: 40px
+}
+
+.sedona-video__text-wrapper{
+    .mobile-centered;
+    text-align: center;
+}
+
+.sedona-video__text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: lighter;
+    color: #424242;
+
+    width: 240px;
+
+    margin: 0 auto;
+
+    margin-bottom: 55px;
+}
+
+.sedona-video__title{
+    display: block;
+    margin-bottom: 35px;
+}
+
+.sedona-video__video{
+    width: 320px;
+    height: 201px;
+}
+
+@media(min-width: @tablet-width){
+    .sedona-video__title{
+        font-size: 30px;
+    }
+    .sedona-video__text-wrapper{
+        .tablet-centered;
+    }
+    .sedona-video__text{
+        width: 444px;
+    }
+
+    .sedona-video__video{
+        width: 648px;
+        height: 499px;
+    }
+
+    .sedona-video__wrapper{
+        .tablet-centered;
+    }
+
+}
+
+@media(min-width: @desktop-width){
+    .sedona-video__video{
+        width: 800px;
+        height: 500px;
+    }
+    .sedona-video__wrapper{
+        width: 800px;
+        
+    }
+
+}

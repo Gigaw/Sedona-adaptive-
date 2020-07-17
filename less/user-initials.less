@@ -1,0 +1,138 @@
+.user-initials{
+    border: none;
+    padding: 0;
+
+    width: 100%;
+
+    .mobile-centered;
+    
+}
+.user-initials__title{
+    padding: 22px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.user-initials__label{
+    font-size: 14px;
+
+    color: #424242;
+    font-weight: lighter;
+
+    margin-right: 15px;
+}
+
+.user-initials__item-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+
+    
+
+    margin-bottom: 25px;
+
+}
+
+.user-initials__name,
+.user-initials__surname,
+.user-initials__middle-name{
+    
+    
+    box-sizing: border-box;
+    padding-left: 15px;
+    height: 58px;
+
+    font-size: 18px;
+
+    .text-input;
+
+    &:hover{
+        .text-input--hover;
+    }
+
+    &:focus{
+        .text-input--active;
+    }
+    &:valid{
+        .text-input--active;
+    }
+
+}
+
+.user-initials__name{
+    width: 230px;
+}
+.user-initials__surname{
+    width: 192px;
+}
+.user-initials__middle-name{
+    width: 194px;
+}
+
+.user-initials__wrapper{
+   border-bottom:  1px solid #e5e5e5;
+}
+
+@media(min-width: @tablet-width){
+    .user-initials__title{
+
+        text-align: left;
+
+        font-size: 21px;
+
+        padding: 0;
+        margin-bottom: 65px;
+    }
+    .user-initials__wrapper{
+        border-bottom: none;
+    }
+
+    .user-initials{
+        min-height: 320px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .user-initials__item-wrapper{
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    
+}
+
+@media(min-width: @desktop-width){
+    .user-initials__wrapper{
+        width: 400px;
+    }
+
+    .user-initials{
+        margin: 0;
+        width: 100%;
+    }
+
+    .user-initials__name{
+        width: 350px;
+    }
+
+    .user-initials__item-wrapper{
+        width: 100%;
+    }
+
+    .user-initials__surname{
+        width: 312px;
+    }
+
+    .user-initials__middle-name{
+        width: 314px;
+    }
+}

@@ -1,0 +1,145 @@
+.user-impression__wrapper{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+
+    order: -1;
+}
+.user-impression{
+    border: none;
+    padding: 0;
+
+    .mobile-centered;
+}
+
+.user-impression__title{
+    padding: 22px 0;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.user-impression__radio{
+    .visually-hidden;
+}
+
+.user-impression__radio-marker{
+    display: block;
+
+    width: 46px;
+    height: 46px;
+
+    background-color:  #F1F1F1;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    transition-duration: 0.2s ;
+
+    &::before{
+        content: "";
+
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        display: none;
+
+        width: 16px;
+        height: 16px;
+
+        background-color: #333333;
+
+        border-radius: 50%;
+    }
+}
+
+.user-impression__radio:checked + .user-impression__radio-marker::before{
+    display: block;
+}
+
+.user-impression__label{
+    text-transform: none;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    &:hover .user-impression__radio-marker{
+        background-color: #E5E5E5;
+    }
+}
+
+.user-impression__radio-marker-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+@media(min-width: @tablet-width){
+    .user-impression__title{
+        text-align: left;
+
+        font-size: 21px;
+
+        padding: 0;
+
+        margin-bottom: 65px;
+    }
+
+    .user-impression__radio-marker-wrapper{
+        justify-content: space-between;
+
+        min-height: 58px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .user-impression__label{
+        margin-right: 30px ;
+    }
+
+    .user-impression__wrapper{
+        border-bottom: none;
+
+        padding: 0;
+    }
+
+    .user-impression{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        min-height: 320px;
+    }
+}
+
+@media(min-width: @desktop-width){
+    .user-impression__wrapper{
+        width: 362px;
+    }
+
+    .user-impression{
+        margin: 0;
+        width: 100%;
+    }
+
+    .user-impression__title{
+        text-align: right;
+    }
+
+    .user-impression__radio-marker-wrapper{
+        justify-content: flex-start;
+    }
+
+    .user-impression__label{
+        margin-left: 25px;
+    }
+}
+
+

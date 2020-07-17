@@ -1,0 +1,46 @@
+.form-header__wrapper{
+    .mobile-centered();
+}
+.form-header{
+    background-color: white;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #E5E5E5;
+}
+.form-header__title{
+    display: block;
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-header__text{
+    font-size: 14px;
+    
+    color: #424242;
+
+    text-align: center;
+    line-height: normal;
+}
+
+@media(min-width: @tablet-width){
+    .form-header__wrapper{
+        .tablet-centered();
+    }
+
+    .form-header__title{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .form-header__text{
+        width: 444px;
+        margin: 0 auto;
+    }
+    .form-header{
+        border: none;
+    }
+}

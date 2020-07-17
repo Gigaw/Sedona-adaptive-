@@ -1,0 +1,49 @@
+.page-sedona-background{
+  min-height: 389px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../img/intro-triangle.svg),
+      url(../img/sedona-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-color: #7f6665;
+  background-position: bottom center, center center;
+}
+
+.page-sedona-background--short{
+  min-height: 158px;
+  
+}
+
+@media (min-width:@tablet-width) {
+  .page-sedona-background{
+    min-height: 518px;
+  }
+  .page-sedona-background--short{
+    min-height: 290px;
+    
+  }
+
+  .page-sedona-background__text-logotype{
+    width: 460px;
+  }
+
+
+}
+
+@media (min-width:@desktop-width) {
+  .page-sedona-background{
+    min-height: 518px;
+  }
+  .page-sedona-background--short{
+    min-height: 300px;
+    
+  }
+
+  .page-sedona-background__text-logotype{
+    width: 460px;
+  }
+}

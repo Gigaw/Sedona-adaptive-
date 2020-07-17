@@ -1,0 +1,150 @@
+.real-city__wrapper{
+  padding-top: 50px;
+
+  color: white;
+
+  background-image: url(../img/white-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: @sedona-blue;
+
+}
+
+.real-city__wrapper{
+  overflow:hidden;
+}
+.real-city__text-wrapper{
+  width: 280px;
+
+  display: inline-block;
+
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.real-city__list{
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+
+  list-style: none;
+  text-align: right;
+
+  background-color: white;
+}
+
+.real-city__item{
+  display: inline-block;
+  width: 232px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  position: relative;
+  &::before{
+    content: "";
+
+
+    position: absolute;
+    left: -50px;
+
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+
+  }
+
+}
+
+.real-city__item--housing::before{
+  background-image: url(../img/icon-house.svg);
+}
+.real-city__item--food::before{
+  background-image: url(../img/icon-burger.svg);
+}
+.real-city__item--souvenirs::before{
+  background-image: url(../img/icon-gift.svg);
+}
+.real-city__title{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.real-city__text-recommendation{
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+@media (min-width:@tablet-width) {
+  .real-city__wrapper{
+    background-image: none;
+
+    padding-top: 0;
+
+    display: flex;
+  }
+
+  .real-city__text-wrapper{
+    width: 167px;
+    margin: 0 auto;
+
+    padding-bottom: 25px ;
+    padding-top: 45px ;
+
+  }
+
+  .real-city__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 60px
+
+
+
+
+  }
+  .real-city__item{
+    width: 167px;
+    margin-top:  105px;
+    margin-right: 0;
+    margin-bottom: 0;
+    min-height: 181px;
+
+    text-align: center;
+    &::before{
+      width: 77px;
+      height: 77px;
+      background-size: cover;
+      left: 50%;
+      top: -85px;
+      margin-left: -38px ;
+    }
+  }
+
+  .real-city__item--housing::before{
+    width: 75px;
+    height: 72px;
+  }
+  .real-city__item--food::before{
+    width: 77px;
+    height: 68px;
+  }
+  .real-city__item--souvenirs::before{
+    width: 64px;
+    height: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-city__text-wrapper{
+    width: 309px;
+    padding-top: 60px;
+  }
+}

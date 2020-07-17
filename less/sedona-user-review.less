@@ -1,0 +1,86 @@
+.sedona-user-review{
+    background-color: white;
+}
+
+// .sedona-user-review__wrapper{
+//     .mobile-centered();
+// }
+
+.review-form__submit-button{
+    display: block;
+    width: 280px;
+    height: 58px;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+
+    border: none;
+
+    background-color: #81B3D1;
+
+    color: white;
+    font: inherit;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .mobile-centered;
+    
+    margin-top: 40px;
+
+    transition-duration: 0.2s ;
+
+    &:hover{
+        background-color: #659DBF;
+    }
+
+}
+
+@media (min-width: @tablet-width){
+    .sedona-user-review__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .tablet-centered;
+
+    }
+    .sedona-user-review{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .review-form__button-wrapper{
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 50px;
+
+    }
+
+    .review-form__required-fields{
+        font-size: 14px;
+        font-weight: lighter;
+        color: #424242;
+    }
+
+    .review-form__submit-button{
+        width: 324px;
+
+        margin: 0;
+    }
+
+}
+
+@media(min-width: @desktop-width){
+    .sedona-user-review__form{
+        .desktop-centered;
+    }
+
+    .review-form__submit-button{
+        width: 480px;
+    }
+}

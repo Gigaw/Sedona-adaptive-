@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header page-header--nojs  page-header--closed">
+      <nav class="page-header__page-nav page-nav">
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--current"><a href="photo-video.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="#htmlacademy.html">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" alt="Логотип  'Седона' ">
+      <img class="page-header__logo-image--desktop" src="img/logotype-desktop.svg" width="188" alt="Логотип  'Седона'  Десктопный ">
+      <div class="page-header__toggle-wrapper">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      </header>
+
+    <main class="page-main">
+      <section class="page-sedona-background page-sedona-background--short">
+        <img class="sedona-text-logotype page-sedona-background__text-logotype" src="img/form/sedona-text-logotype-short.png" alt="Текстовый логотип Седоны">
+      </section>
+      <section class="sedona-photos">
+        <header class="sedona-photos__header">
+          <div class="sedona-photos__header-wrapper">
+            <h1 class="sedona-photos__header-title">Фото и видео</h1>
+            <p class="sedona-photos__header-text">Не можете решиться на путешевствие из за курса?
+            Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </header>
+        <h2 class="visually-hidden--text">Фото Седоны</h2>
+        <ul class="sedona-photos__list photos-list">
+           <li class="photos-list__item photos-list__item--wide ">
+           <figure class="photos-figure">
+             <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/photo-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-video/photo-1-tablet.jpg">
+                <img class="photos-figure__image" src="img/photo-video/photo-1-mobile.jpg" alt="Фотография седоны 1">
+             </picture> 
+             <div class="photos-figure__description-wrapper">
+              <div class="photos-figure__author-wrapper">
+                <figcaption class="photos-figure__description">Неродные просторы</figcaption>
+                <small class="photos-figure__photo-author">Автор фото: Борис</small>
+              </div>
+              <span class="photos-figure__likes-number">1350</span>
+            </div>
+           </figure></li>
+
+           <li class="photos-list__item">
+           <figure class="photos-figure">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-video/photo-2-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-video/photo-2-tablet.jpg">
+                <img class="photos-figure__image" src="img/photo-video/photo-2-mobile.jpg" alt="Фотография седоны 2">
+           </picture> 
+           <div class="photos-figure__description-wrapper">
+              <div class="photos-figure__author-wrapper">
+                <figcaption class="photos-figure__description">Местная растительность</figcaption>
+                <small class="photos-figure__photo-author">Автор фото: Сергей</small>
+              </div>
+              <span class="photos-figure__likes-number">143</span>
+            </div>
+           </figure></li>
+
+           <li class="photos-list__item">
+           <figure class="photos-figure photos-figure--dark">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-video/photo-3-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-video/photo-3-tablet.jpg">
+                <img class="photos-figure__image" src="img/photo-video/photo-3-mobile.jpg" alt="Фотография седоны 3">
+           </picture> 
+            <div class="photos-figure__description-wrapper">
+              <div class="photos-figure__author-wrapper">
+                <figcaption class="photos-figure__description">Дорога на Север</figcaption>
+                <small class="photos-figure__photo-author">Автор фото: Петр</small>
+              </div>
+              <span class="photos-figure__likes-number">96</span>
+            </div>
+           </figure></li>
+
+
+           <li class="photos-list__item">
+           <figure class="photos-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/photo-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-video/photo-4-tablet.jpg">
+                <img class="photos-figure__image" src="img/photo-video/photo-4-mobile.jpg" alt="Фотография седоны 4">
+              </picture> 
+              <div class="photos-figure__description-wrapper">
+                <div class="photos-figure__author-wrapper">
+                  <figcaption class="photos-figure__description">Мост Дьявола</figcaption>
+                  <small class="photos-figure__photo-author">Автор фото: Антон</small>
+                </div>
+                <span class="photos-figure__likes-number">254</span>
+             </div>
+           </figure></li>
+        </ul>
+
+      </section>
+
+      <section class="sedona-video">
+        <h2 class="visually-hidden--text">Видео о Седоне</h2>
+        <div class="sedona-video__wrapper">
+          <div class="sedona-video__text-wrapper">
+            <b class="sedona-video__title">Все еще сомневаетесь?</b>
+            <p class="sedona-video__text">Смотрите видепрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <iframe class="sedona-video__video" width="320px" src="https://www.youtube.com/embed/_qHjLngt7OI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">
+          <b class="sedona-hashtag">#visitsedona</b>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+            Мы в Вконтакте</a></li>
+
+            <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+            Мы в Фейсбуке</a></li>
+
+            <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://instagram.com/htmlacademy">
+            Мы в Инстаграме</a></li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
